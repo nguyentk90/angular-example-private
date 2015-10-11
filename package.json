@@ -1,0 +1,11 @@
+{
+  "name": "angular-example",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "^3.9.0"
+  }
+}
