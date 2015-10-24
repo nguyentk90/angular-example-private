@@ -6,7 +6,8 @@ var conf = require('./conf');
 
 gulp.task('serve', ['bower'], function () {
   var files = [
-    conf.paths.src + '/app/**/*.html'
+    conf.paths.src + '/app/**/*.html',
+    conf.paths.src + '/app/**/*.js'
   ];
   browserSync.init(files, {
     server: {
