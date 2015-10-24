@@ -45,6 +45,25 @@
                 },
             }
         });
-
+        $stateProvider.state('dialog', {
+            parent: 'main',
+            url: '/dialog',
+            views: {
+                'content@': {
+                    templateUrl: '/app/dialog/dialog.html',
+                    controller: 'dialog as vm'
+                },
+            }
+        });
+         $stateProvider.state('menu', {
+            parent: 'main',
+            url: '/menu',
+            views: {
+                'content@': {
+                    templateUrl: '/app/menu/menu.html',
+                    controller: 'menu as vm'
+                },
+            }
+        });
     }
 })('angularExample', angular);
