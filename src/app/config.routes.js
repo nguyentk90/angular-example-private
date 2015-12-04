@@ -55,13 +55,23 @@
                 },
             }
         });
-         $stateProvider.state('menu', {
+        $stateProvider.state('menu', {
             parent: 'main',
             url: '/menu',
             views: {
                 'content@': {
                     templateUrl: '/app/menu/menu.html',
                     controller: 'menu as vm'
+                },
+            }
+        });
+        $stateProvider.state('checkbox', {
+            parent: 'main',
+            url: '/checkbox',
+            views: {
+                'content@': {
+                    templateUrl: '/app/checkbox/checkbox.html',
+                    controller: 'checkbox as vm'
                 },
             }
         });
