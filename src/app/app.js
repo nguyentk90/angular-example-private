@@ -3,7 +3,8 @@
 
     var app = ng.module(moduleId, [
         'ngMaterial',
-        'ui.router'
+        'ui.router',
+        'angularExample.services'
     ]);
 
     app.run(main);
