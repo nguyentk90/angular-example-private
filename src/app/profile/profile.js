@@ -5,7 +5,30 @@
 
     /* @ngInject */
     function controller($q, $timeout) {
-
+        var vm = this;
+        vm.profile = {
+            name: 'Nguyen',
+            age: 25,
+            random: new Date().getTime(),
+            cars: ['Honda', 'Toyota']
+        };
+        
+        vm.name = 'John';
+        vm.enable = true;
+        vm.isPrivate = false;
+        
+        vm.changeName = function() {
+            vm.name = 'John2222222';
+        };
+        
+        vm.addCar = function() {
+            vm.profile.cars.push('Yamaha');
+        };
+        
+        vm.resetProfile = function() {
+            vm.profile.random = new Date().getTime();
+        };
+        
         init();
 
         function init() {

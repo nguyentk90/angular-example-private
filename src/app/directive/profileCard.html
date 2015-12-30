@@ -1,0 +1,16 @@
+<div style="border: 1px solid #CCC; margin:5px" flex>
+    <h1>{{profile.name}}</h1>
+    <h2>{{profile.age}}</h2>
+    <h2>{{profile.random}}</h2>
+    <md-button ng-click="changeName()"></md-button>
+    <span>{{name}}</span>
+    <p ng-repeat="item in profile.cars">{{item}}</p>
+    <hr />
+    <h1>{{vm.data.random}}</h1>
+    <input ng-disabled="enable" />
+    <md-switch ng-model="enable">Enable Inside?</md-switch>
+    <md-input-container>
+        <label>Title</label>
+        <input ng-disabled="enable" ng-model="user.title">
+    </md-input-container>
+</div>
