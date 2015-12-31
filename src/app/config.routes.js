@@ -75,5 +75,19 @@
                 },
             }
         });
+        createState('slick');
+
+        function createState(name) {
+            $stateProvider.state(name, {
+                parent: 'main',
+                url: '/' + name,
+                views: {
+                    'content@': {
+                        templateUrl: '/app/' + name + '/' + name + '.html',
+                        controller: name + ' as vm'
+                    },
+                }
+            });
+        }
     }
 })('angularExample', angular);

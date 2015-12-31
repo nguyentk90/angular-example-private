@@ -4,7 +4,8 @@
     var app = ng.module(moduleId, [
         'ngMaterial',
         'ui.router',
-        'angularExample.services'
+        'angularExample.services',
+        'slick'
     ]);
 
     app.run(main);

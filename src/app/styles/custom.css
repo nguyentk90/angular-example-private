@@ -15,3 +15,21 @@
 .dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
   font-size: 0.8em;
   margin-top: 50px; }
+ 
+div.removed-item {
+    animation: removed-item-animation 1s cubic-bezier(0.55, -0.04, 0.91, 0.94) forwards;
+    /*transform origin is moved to the bottom left corner*/   
+}
+ 
+@keyframes removed-item-animation {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+}
+ 
+    100% {
+        opacity: 0;
+        width: 0px;
+        transform: scale(0);
+    }
+}

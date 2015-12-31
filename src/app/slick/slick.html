@@ -1,0 +1,6 @@
+<h2>Slick Sample</h2>
+<slick slides-to-show="3" arrows="true" infinite="false" touch-move="true" slides-to-scroll="1">
+    <div class="slick-item" ng-click="vm.remove(item.id)" id={{item.id}} ng-repeat="item in vm.data" style="border:1px solid #EEE; margin:5px;">
+        <h4>{{item.text}}</h4>
+    </div>    
+</slick>
